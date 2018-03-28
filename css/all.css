@@ -1,0 +1,335 @@
+html, body, div, span, applet, object, iframe,h1,
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body h1, h2, label, th{
+	font-weight: bold;
+}
+
+body h1{
+	font-size: 48px;
+}
+
+.wrap{
+	width: 1024px;
+	margin: 0 auto;
+	font-family: Microsoft JhengHei;
+}
+
+.header{
+	width: 1024px;
+	height: 100px;
+	float: left;
+}
+
+.header-icon{
+	height: 30px;
+	margin-top: 20px;
+	background-color: #f6f6f6;
+}
+
+.header-icon ul{
+	float: right;
+	line-height: 30px;
+
+}
+
+.header-icon li{
+	float: left;
+	margin-right: 5px;
+}
+
+.header-icon a{
+	text-decoration: none;
+}
+
+.header-icon li img{
+	padding-right: 3px;
+	float: left;
+}
+
+.header-icon li span{
+	float: left;
+}
+
+.icon1{
+	color: #4460a0;
+	padding-right: 5px;
+	border-right: 2px solid gray;
+}
+
+.icon1 img{
+	margin-top: 7px;
+}
+
+.icon2{
+	color: #00aaec;
+}
+
+.icon2 img{
+	margin-top: 10px;
+}
+
+.logo{
+	float: left;
+	width: 170px;
+	height: 36px;
+	background: url(../img/logo.png);
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 7px	5px;
+}
+
+.menu{
+	float: right;
+}
+
+.menu>li{
+	float: left;
+	line-height: 50px;
+	margin-right: 10px;
+	position: relative;
+}
+
+.menu li a{
+	text-decoration: none;
+	padding-bottom: 5px;
+	color: #00CC99;
+}
+
+.menu>li a:hover,.menu>li a.active{
+	border-bottom: 3px solid #00CC99;
+}
+
+.menu ul{
+	position: absolute;
+	z-index: 999;
+	display: none;
+	left: -20px;
+}
+
+.menu ul li{
+	width: 150px;
+	background-color: rgba(0, 204, 153,0.7);
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.menu ul li a:hover{
+	border-bottom: 3px solid red;
+}
+
+.menu ul li a{
+	color: red;
+}
+
+
+/*.menu>li:hover ul{
+	float: left;
+	display: block;
+}*/
+
+.clearfix{
+	clear: both;
+}
+
+.theme-default{
+	position: relative;
+}
+
+.theme-default .slider-h1{
+	width: 984px;
+	color: white;
+	background-color: hsla(240, 0%, 50%, 0.2);
+	position: absolute;
+	padding: 40px 20px;
+	top: 30%;
+	z-index: 5;
+}
+
+.productList li{
+	float: left;
+	width: 260px;
+	height: 400px;
+	box-shadow: 1px 1px 5px gray;
+	margin: 20px;
+	padding: 20px;
+}
+
+.productList img{
+	display:block;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+.productList h2{
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.productList p{
+	line-height: 1.5;
+}
+
+.content{
+	margin-top: 40px;
+}
+
+.content h2{
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 30px;
+}
+
+.price{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.price th, .price td{
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.price th{
+  background-color: #f7f7f7;
+}
+
+.color{
+	color: #00CC99;
+}
+
+.message{
+	float: left;
+	margin-top: 40px;
+	background: linear-gradient(#00644b,#009872);
+	color: white;
+}
+
+.message h2{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 30px;
+}
+
+.message_left{
+	padding: 10px;
+	float: left;
+}
+
+.message_left textarea{
+	border-radius: 10px;
+	overflow:hidden
+}
+
+.message_right{
+	float: right;
+}
+
+.message_right li{
+	margin: 15px;
+}
+
+.message_right input{
+	width: 470px;
+	border-radius: 3px;
+}
+
+.submit{
+	float: right;
+	padding: 10px 20px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #00CC99;
+	border:none;
+}
+
+.submit:hover{
+	background-color: #a1a1a1;
+	cursor: pointer;
+}
+
+
+.footerlogo{
+	float: left;
+	width: 170px;
+	height: 36px;
+	background: url(../img/footer-logo.png);
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 15px 10px;
+}
+
+.footer ul{
+	width: 350px;
+	margin-top: 15px;
+	float: right;
+}
+
+.footer li{
+	padding-bottom: 8px;
+	float: left;
+}
+
+.footer li p{
+	display: inline;
+	color: #e12d80;
+}
+
+.top{
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+}
+
+.nivo-controlNav{
+	display: none;
+}
